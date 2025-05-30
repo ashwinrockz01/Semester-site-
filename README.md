@@ -9,18 +9,17 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000000; /* full black background */
-      color: white;
       text-align: center;
+      background-color: #121212; /* dark tone background */
+      color: white;
     }
 
     h1 {
-      background: #111;
+      background: rgba(0, 0, 0, 0.8);
       padding: 20px;
       margin: 0;
       color: white;
       font-size: 2em;
-      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
     }
 
     .subject-list {
@@ -31,16 +30,18 @@
     }
 
     .subject {
-      background: #111111;
-      border: 1px solid #333;
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
       padding: 20px;
-      transition: transform 0.2s ease, background 0.3s;
+      transition: transform 0.2s ease;
+      color: white;
     }
 
     .subject:hover {
       transform: scale(1.05);
-      background: #1a1a1a;
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
     }
 
     .subject h2 {
@@ -49,19 +50,20 @@
       -webkit-text-fill-color: transparent;
       font-weight: bold;
       font-size: 1.4em;
-      margin-bottom: 12px;
+      margin: 0 0 10px 0;
     }
 
     a.button {
       display: inline-block;
+      margin-top: 10px;
       padding: 10px 15px;
       background-color: #000;
       color: white;
       text-decoration: none;
-      border: 1px solid #fff;
       border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+      transition: background-color 0.3s ease;
     }
 
     a.button:hover {
@@ -72,7 +74,6 @@
 <body>
   <h1>📚 Semester Subjects</h1>
   <div class="subject-list">
-
     <div class="subject">
       <h2>🤖 Machine Learning</h2>
       <a class="button" href="https://drive.google.com/drive/folders/1oLUef5G8f99SUjiTD-3YOy2LDzirVhP8" target="_blank">📂 View Notes</a>
@@ -102,7 +103,9 @@
       <h2>📊 Probability and Statistics</h2>
       <a class="button" href="https://drive.google.com/drive/folders/1oYeHDHFzIjgWz8FCFWzCyhGiRlsOMxz0" target="_blank">📂 View Notes</a>
     </div>
-
   </div>
+  <link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+
 </body>
 </html>
